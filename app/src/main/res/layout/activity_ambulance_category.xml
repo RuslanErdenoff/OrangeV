@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.customerView.AmbulanceCategoryActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/tool_bar"/>
+
+        <EditText
+            android:paddingHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_bottom_navigation_search"
+            android:drawablePadding="10dp"
+            android:hint="Поиск (введите искомое)"/>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+
+            android:paddingHorizontal="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Сортировка"/>
+        <RadioGroup
+
+            android:paddingHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:button="@drawable/radio_button_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/black"
+                android:text="Дежурство на мероприятиях"/>
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:button="@drawable/radio_button_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/black"
+                android:text="Мед транспортировка"/>
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:button="@drawable/radio_button_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/black"
+                android:text="Неотложенный мед вызов"/>
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:button="@drawable/radio_button_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/black"
+                android:text="Консультация \ диагностическа"/>
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:button="@drawable/radio_button_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/black"
+                android:text="Детский вызов"/>
+            <RadioButton
+                android:paddingLeft="15dp"
+                android:button="@drawable/radio_button_white_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:textColor="@color/black"
+                android:text="Активы взорослые \ детские"/>
+        </RadioGroup>
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_marginVertical="14dp"
+            android:paddingHorizontal="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Результаты поиска"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/customer_profile_fragment_favorite_consultants_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+            </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

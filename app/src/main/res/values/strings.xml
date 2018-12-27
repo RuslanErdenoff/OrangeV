@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Orange</string>
+
+    <string name="app_title">orange</string>
+    <string name="welcome_page_one_info">Мобильная медицинская помощь</string>
+    <string name="welcome_page_two_info">Доктор Апельсин поможет Вам найти нужного специалиста!</string>
+    <string name="welcome_page_three_info">Честный рейтинг всех специалистов!</string>
+    <string name="welcome_page_four_info">Экономьте время вместе с нами!</string>
+    <string name="welcome_page_five_info">Зарабатывайте вместе с нами!</string>
+    <string name="skip_button">Пропустить</string>
+    <string name="next_button">Далее</string>
+    <string name="login_button">Войти</string>
+    <string name="login_page_title">Войти в профиль</string>
+    <string name="input_login">Введите логин</string>
+    <string name="input_password">Введите пароль</string>
+    <string name="input_password_again">Повторите пароль еще раз</string>
+    <string name="login_page_not_registered">Не зарегестрированы?</string>
+    <string name="login_page_registration">Регистрация</string>
+    <string name="login_page_input_login_info">E-mail адресс, указанный при регистрации</string>
+    <string name="login_page_password_recovery">Забыли пароль?</string>
+    <string name="recovery_password_page_input_email">Введите e-mail адресс</string>
+    <string name="recovery_password_email_check">Проверьте e-mail адресс Вам были высланы инструкции по смене старого пароля</string>
+    <string name="registration_page_customer_radio_button">Я пациент</string>
+    <string name="registration_page_doctor_customer_radio_button">Я мед. спецалист</string>
+    <string name="registration_page_allready_registered">Уже зарегистрированы?</string>
+    <string name="registration_page_email_info">Указанный e-mail адрес будет являться Вашим логином.
+    Желательно указывать действуйщий почтовый адрес,
+    так как все остальное взаимодействия будут происходить
+    через указанный e-mail адрес.</string>
+    <string name="registration_page_congrat">Поздравляем Регистрация Прошла Успешно!</string>
+    <string name="registration_page_input_name">Ваше Имя</string>
+    <string name="registration_page_input_surname">Ваша Фамилия</string>
+    <string name="registration_page_input_patronymic">Ваше Отчество</string>
+    <string name="registration_page_input_phone_number">Номер Телефона</string>
+    <string name="city">Город</string>
+    <string name="city_test_1">Алматы</string>
+    <string name="city_test_2">Только Алматы</string>
+    <string name="city_test_3">Алматы the best</string>
+    <string name="city_test_4">Алматы выбери сука!</string>
+    <string name="registration_page_input_gender">Ваш пол</string>
+    <string name="gender_male">Мужчина</string>
+    <string name="gender_female">Женщина</string>
+    <string name="date_if_birth">Дата рождения</string>
+    <string name="customer_height">Рост</string>
+    <string name="customer_weight">Вес</string>
+    <string name="customer_blood_type">Группа крови</string>
+    <string name="customer_cervical_diseases">Хронические заболевания или аллергии</string>
+    <string name="customer_profile_page_top_navigation_profile">Мой профиль</string>
+    <string name="customer_profile_page_top_navigation_contacts">Контакты</string>
+    <string name="customer_profile_page_top_navigation_settings">Настройки</string>
+    <string name="profile_add_photo">Добавить фото</string>
+    <string name="profile_status_offline">Offline</string>
+    <string name="profile_status_online">Online</string>
+    <string name="gender">Пол</string>
+    <string name="age">Возраст</string>
+    <string name="profile_email">Email адресс</string>
+    <string name="profile_phone_number">Номер телефона</string>
+    <string name="profile_home_address">Домашний адрес</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

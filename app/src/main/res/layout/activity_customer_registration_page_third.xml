@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutFocusTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <include layout="@layout/tool_bar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="35dp">
+
+                <EditText
+                    android:id="@+id/testEdittext"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_page_input_name"/>
+                <View
+                    android:layout_marginVertical="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+                <EditText
+                    android:focusableInTouchMode="true"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_page_input_surname"/>
+                <View
+                    android:layout_marginVertical="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+                <EditText
+                    android:focusableInTouchMode="true"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_page_input_patronymic"/>
+                <View
+                    android:layout_marginVertical="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+                <EditText
+                    android:focusableInTouchMode="true"
+                    android:textSize="16sp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/registration_page_input_phone_number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical"
+                android:paddingLeft="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/city"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:text="Алма-ата"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_current_city"
+                        android:drawableRight="@drawable/ic_arrow_down"/>
+                    <RadioGroup
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_group_cities"
+                        android:visibility="gone">
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:paddingHorizontal="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registration_page_input_gender"/>
+
+                    <RadioGroup
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_gravity="left|center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:paddingLeft="10dp"
+                            android:button="@drawable/radio_button_white_selector"
+                            android:textColor="@color/black"
+                            android:text="Муж."/>
+
+                        <RadioButton
+                            android:layout_gravity="right|center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="50dp"
+                            android:paddingLeft="10dp"
+                            android:button="@drawable/radio_button_white_selector"
+                            android:textColor="@color/black"
+                            android:text="Жен."/>
+                    </RadioGroup>
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="35dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/date_if_birth"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="right|top">
+                            <TextView
+                                android:id="@+id/dateOfBirth"
+                                android:textColor="@color/black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:visibility="gone"/>
+                            <Button
+                                android:onClick="setDate"
+                                android:textColor="@color/orange"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:background="@null"
+                                android:text="Выбрать дату"/>
+                        </LinearLayout>
+
+                        <!---
+                        <DatePicker
+                            android:headerBackground="@color/orange"
+                            android:id="@+id/datePicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:calendarViewShown="false"
+                            android:datePickerMode="spinner"
+                            android:spinnersShown="true"/> -->
+
+                    </FrameLayout>
+                    <View
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/darker_gray"/>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/customer_height"/>
+
+                        <EditText
+                            android:focusableInTouchMode="true"
+                            android:textColor="@color/black"
+                            android:background="@null"
+                            android:hint="(см)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:width="100dp"
+                            android:inputType="number"/>
+
+                    </FrameLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@android:color/darker_gray"/>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left|center"
+                            android:gravity="center"
+                            android:text="@string/customer_weight"/>
+
+                        <EditText
+                            android:focusableInTouchMode="true"
+                            android:background="@null"
+                            android:hint="(кг)"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center"
+                            android:width="100dp"
+                            android:inputType="number"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginVertical="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="35dp"
+                android:orientation="vertical"
+                android:layout_marginVertical="10dp">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/customer_cervical_diseases"/>
+
+                <EditText
+                    android:focusableInTouchMode="true"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:background="@null"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_shape_bg"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20dp"
+                android:onClick="fourthRegistrationPage"/>
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:text="Зарегистрироваться"
+                android:layout_gravity="center|right"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginLeft"
+                app:srcCompat="@drawable/ic_orange_title_orange">
+            </ImageView>
+
+        </FrameLayout>
+    </LinearLayout>
+
+
+</ScrollView>

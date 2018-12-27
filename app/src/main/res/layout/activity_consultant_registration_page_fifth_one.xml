@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.consultantRegistration.ConsultantRegistrationPageFifthOneActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_aid_nurse"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Медсестра"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:button="@drawable/check_box_selector_a"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Капельницы"/>
+        <CheckBox
+            android:button="@drawable/check_box_selector_a"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Экпресс анализ сахара в крови"/>
+        <CheckBox
+            android:button="@drawable/check_box_selector_a"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Катетеризация моч. пузыря"/>
+        <CheckBox
+            android:button="@drawable/check_box_selector_a"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Уколы: в\м, в\в, п\к, инъекции"/>
+        <CheckBox
+            android:button="@drawable/check_box_selector_a"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Хирургические перевязки"/>
+        <CheckBox
+            android:button="@drawable/check_box_selector_a"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Клизма"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageButton
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape_bg"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="20dp"
+            android:onClick="consultantRegistrationSave"/>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Сохранить"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginLeft"
+            app:srcCompat="@drawable/ic_orange_title_orange">
+        </ImageView>
+
+    </FrameLayout>
+</LinearLayout>

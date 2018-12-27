@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.customerView.CustomerFragmentProfilePager"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@color/white"
+        android:paddingHorizontal="10dp">
+
+        <android.support.design.widget.TabLayout
+            app:tabTextAppearance="@style/ProfileTabs"
+            android:id="@+id/consultant_requests_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="false"
+            android:background="@color/white"
+            app:tabTextColor="@color/light_grey"
+            app:tabIndicatorColor="@color/orange"
+            app:tabIndicatorHeight="4dp"
+            app:tabSelectedTextColor="@color/black"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:background="@color/white"
+        android:id="@+id/consultant_requests_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

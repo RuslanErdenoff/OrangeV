@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".view.welcomepagefragments.WelcomePageFifthFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:translationY="@dimen/fragment_welcome_page_layout_translationY"
+        android:background="@drawable/welcome_page_five_bg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="45dp"
+            app:srcCompat="@drawable/oranges_coin"
+            android:layout_gravity="bottom|center"/>
+        <TextView
+            android:layout_width="@dimen/fragment_welcome_page_third_text_view_layout_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/fragment_welcome_page_text_view_text_size"
+            android:layout_marginLeft="@dimen/fragment_welcome_page_third_text_view_layout_marginLeft"
+            android:layout_marginTop="@dimen/fragment_welcome_page_third_text_view_layout_marginTop"
+            android:text="Зарабатывайте вместе с нами!"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginLeft"
+            android:layout_marginTop="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginTop"
+            app:srcCompat="@drawable/ic_orange_title_orange">
+        </ImageView>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+
+</LinearLayout>

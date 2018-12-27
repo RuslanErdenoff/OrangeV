@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ConsultantCreateEventActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="#FFFFFF"
+            app:popupTheme="@style/AppTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:minHeight="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:text="Создать событие"
+                        android:id="@+id/contacts_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+       <RadioGroup
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <RadioButton
+               android:text="Выезд к пациенту"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@drawable/radio_button_white_selector"
+               android:textColor="@color/black"
+               android:paddingLeft="10dp">
+           </RadioButton>
+           <RadioButton
+               android:layout_marginTop="20dp"
+               android:text="Прием пациента у себя"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:button="@drawable/radio_button_white_selector"
+               android:textColor="@color/black"
+               android:paddingLeft="10dp">
+           </RadioButton>
+       </RadioGroup>
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/darker_gray"/>
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:layout_gravity="left|center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:textSize="12sp"
+                   android:text="В какое время "/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="right|center">
+
+                   <EditText
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="12sp"
+                       android:hint="--"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:background="@null"
+                       android:inputType="number"
+                       android:maxLength="2"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:textSize="12sp"
+                       android:text=" : "/>
+                   <EditText
+                       android:textSize="12sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:hint="--"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:background="@null"
+                       android:inputType="number"
+                       android:maxLength="2"/>
+               </LinearLayout>
+           </FrameLayout>
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/darker_gray"/>
+           <FrameLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:textSize="12sp"
+                   android:layout_gravity="left|center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black"
+                   android:text="Напоманать каждые"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_gravity="right|center">
+
+                   <EditText
+                       android:textSize="12sp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:hint="--"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:background="@null"
+                       android:inputType="number"
+                       android:maxLength="2"/>
+                   <TextView
+                       android:textSize="12sp"
+                       android:layout_marginLeft="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/black"
+                       android:text="минут"/>
+
+               </LinearLayout>
+           </FrameLayout>
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/darker_gray"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="12sp"
+                   android:text="Написать комментарий"/>
+               <EditText
+                   android:layout_marginTop="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:textColor="@color/black"
+                   android:hint="Писать сюда"
+                   android:textColorHint="@color/black"
+                   android:textSize="16sp"
+                   android:inputType="textCapSentences|textMultiLine"
+                   android:drawableRight="@drawable/ic_send_mic"
+                   android:drawablePadding="10dp"/>
+
+           </LinearLayout>
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/darker_gray"/>
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@null"
+               android:textColor="@color/black"
+               android:hint="Имя Фамилия"
+               android:textColorHint="@color/black"
+               android:textSize="16sp"
+               android:inputType="textCapSentences|textMultiLine" />
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/darker_gray"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageButton
+                   android:onClick="onAddCustomer"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:background="@drawable/ic_button_add"/>
+               <TextView
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="15dp"
+                   android:gravity="center"
+                   android:textSize="16sp"
+                   android:textColor="@color/black"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Добавить пациента"/>
+           </LinearLayout>
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/darker_gray"/>
+           <android.support.v7.widget.CardView
+               android:id="@+id/customer_profile_fragment_favorite_consultant_card"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginHorizontal="5dp"
+               card_view:cardCornerRadius="30dp">
+
+               <android.support.constraint.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+
+
+               </android.support.constraint.ConstraintLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:padding="20dp">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+                       <ImageView
+                           android:layout_width="80dp"
+                           android:layout_height="80dp"
+                           android:layout_gravity="left|center"
+                           android:src="@mipmap/icon" />
+
+                       <LinearLayout
+                           android:layout_width="94dp"
+                           android:layout_height="wrap_content"
+                           android:layout_alignParentTop="true"
+                           android:layout_centerHorizontal="true"
+                           android:layout_gravity="center"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="@string/profile_status_online"
+                               android:textColor="@color/light_grey"
+                               android:textSize="13dp" />
+
+                           <TextView
+                               android:id="@+id/card_view_consultant_first_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Келишенко"
+                               android:textColor="@color/black"
+                               android:textSize="15dp"
+                               android:textStyle="bold" />
+
+                           <TextView
+                               android:id="@+id/card_view_consultant_middle_name"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="Анастасия"
+                               android:textColor="@color/black"
+                               android:textSize="15dp"
+                               android:textStyle="bold" />
+                       </LinearLayout>
+                   </RelativeLayout>
+               </LinearLayout>
+           </android.support.v7.widget.CardView>
+           <FrameLayout
+               android:layout_width="250dp"
+               android:layout_height="50dp"
+               android:layout_marginTop="20dp"
+               android:layout_gravity="center">
+
+               <ImageButton
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/button_shape_bg"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_gravity="center"
+                   android:gravity="center">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="+"
+                       android:textStyle="bold"
+                       android:layout_marginHorizontal="10dp"
+                       android:textSize="25sp"
+                       android:textColor="@color/white"/>
+                   <TextView
+                       android:textStyle="bold"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Добавить событие"
+                       android:textSize="18sp"
+                       android:textColor="@color/white"/>
+               </LinearLayout>
+           </FrameLayout>
+           <View
+               android:layout_marginVertical="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@android:color/white"/>
+    </LinearLayout>
+
+</ScrollView>

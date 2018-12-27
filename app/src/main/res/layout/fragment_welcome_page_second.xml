@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/welcome_page_two_bg"
+        android:translationY="@dimen/fragment_welcome_page_layout_translationY">
+        <ImageView
+            android:layout_width="@dimen/fragment_welcome_page_second_oranges_female_male_layout_width"
+            android:layout_height="@dimen/fragment_welcome_page_second_oranges_female_male_layout_height"
+            app:srcCompat="@drawable/oranges_female_male"
+            android:layout_gravity="bottom|center"
+            android:scaleY="@dimen/fragment_welcome_page_second_oranges_female_male_scaleY"
+            android:translationY="@dimen/fragment_welcome_page_second_oranges_female_male_layout_translationY"/>
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="107dp"
+            android:layout_marginLeft="@dimen/fragment_welcome_page_second_text_view_layout_marginLeft"
+            android:layout_marginTop="@dimen/fragment_welcome_page_second_text_view_layout_marginTop"
+            android:text="@string/welcome_page_two_info"
+            android:textColor="@color/dark_green"
+            android:textSize="@dimen/fragment_welcome_page_text_view_text_size" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginLeft"
+            android:layout_marginTop="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginTop"
+            app:srcCompat="@drawable/ic_orange_title_orange">
+        </ImageView>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+</LinearLayout>

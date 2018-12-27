@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/registration_tool_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/input_form_bg">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="E-mail адрес"
+                android:textColorHint="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/light_orange"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="@string/registration_page_email_info"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/orange_female_smile_paper"
+            android:layout_gravity="bottom|right"
+            android:scaleX="-1"
+            android:translationY="25dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="30dp">
+        <EditText
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/input_password"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_lock_outline_orange"
+            android:drawablePadding="30dp"
+            android:backgroundTint="@color/light_orange"/>
+        <EditText
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/input_password_again"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_lock_outline_orange"
+            android:drawablePadding="30dp"
+            android:backgroundTint="@color/light_orange"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_shape_bg"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:onClick="thirdRegistrationPage"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/next_button"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:textColor="@color/white"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginLeft"
+                app:srcCompat="@drawable/ic_orange_title_orange">
+            </ImageView>
+
+
+    </FrameLayout>
+
+</LinearLayout>

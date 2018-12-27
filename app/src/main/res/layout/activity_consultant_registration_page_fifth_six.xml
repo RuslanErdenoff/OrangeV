@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.consultantRegistration.ConsultantRegistrationPageFifthSixActivity"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="15dp">
+        <include layout="@layout/tool_bar"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Детский педиатр"
+                        android:layout_gravity="left"/>
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_cancel_red"/>
+                        <Button
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_edit_pink"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="3 000 kzt - Прием у спциалиста"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="5 000 kzt - Вызов специалиста"/>
+                <TextView
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="- УЗИ органов малого таза
+- Влагалищное обследование
+- Кольпоскопия с видеомониторингом
+- Физикальное обследование
+- Мазок на степень чистоты (по показаниям)
+- Онкоцитологическое исследование (по показаниям)
+- Общий анализ крови (по показаниям)
+- Измерение артериального давления
+- Кровь на микрореакцию (по показаниям)
+- Консультация доктора"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Детский педиатр"
+                        android:layout_gravity="left"/>
+                    <LinearLayout
+                        android:layout_gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_cancel_red"/>
+                        <Button
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/ic_edit_pink"/>
+                    </LinearLayout>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="3 000 kzt - Прием у спциалиста"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="5 000 kzt - Вызов специалиста"/>
+                <TextView
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="- УЗИ органов малого таза
+- Влагалищное обследование
+- Кольпоскопия с видеомониторингом
+- Физикальное обследование
+- Мазок на степень чистоты (по показаниям)
+- Онкоцитологическое исследование (по показаниям)
+- Общий анализ крови (по показаниям)
+- Измерение артериального давления
+- Кровь на микрореакцию (по показаниям)
+- Консультация доктора"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <View
+            android:layout_marginVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Добаить новую услугу"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:hint="Наименование услуги"/>
+        <View
+            android:layout_marginVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Стоимость услуги"/>
+            <EditText
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:background="@null"
+                android:hint="2000"/>
+            <TextView
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="kzt"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+            <RadioGroup
+                android:layout_gravity="left|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:paddingLeft="15dp"
+                    android:button="@drawable/radio_button_white_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Прием"/>
+                <RadioButton
+                    android:paddingLeft="15dp"
+                    android:button="@drawable/radio_button_white_selector"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Полный комплекс"/>
+            </RadioGroup>
+            <RadioGroup
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:paddingLeft="15dp"
+                    android:button="@drawable/radio_button_white_selector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 час"/>
+                <RadioButton
+                    android:paddingLeft="15dp"
+                    android:button="@drawable/radio_button_white_selector"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30 минут"/>
+            </RadioGroup>
+        </FrameLayout>
+        <View
+            android:layout_marginVertical="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Добаить новую услугу"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@null"
+            android:hint="Наименование услуги"/>
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_button_add"/>
+        <FrameLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_shape_bg"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20dp"
+                android:onClick="consultantRegistrationSave"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Сохранить"
+                android:layout_gravity="center|right"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/fragment_welcome_orange_title_linearLayout_layout_marginLeft"
+                app:srcCompat="@drawable/ic_orange_title_orange">
+            </ImageView>
+
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="18dp"
+    card_view:cardBackgroundColor="@color/orange">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вы хотите отменить назначенную запись!
+
+Этого делать не рекомендуется,
+так как это влияет на Ваш рейтинг!"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/very_light_orange"
+            android:textSize="10sp"
+            android:text="В целях сокращения попыток какого либо машеннечества
+и холатности каждая отмена приема пличет за собой
+последствия влияющий на общий рейтинг врача!
+Убедительная просьба не делать этого систематически
+и не делать этого без крайней на то необходимости.
+
+Спасибо за понимание!" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="15dp">
+            <RadioButton
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:button="@drawable/radio_button_selector"
+                android:checked="true"
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:text="Нет доверея к пациенту" />
+            <RadioButton
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:checked="false"
+                android:button="@drawable/radio_button_selector"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:text="По личной причине" />
+            <RadioButton
+                android:layout_marginTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:button="@drawable/radio_button_selector"
+                android:checked="false"
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:text="Форс мажорные обстоятельства" />
+            <RadioButton
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:checked="false"
+                android:button="@drawable/radio_button_selector"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:text="По личной причине" />
+        </RadioGroup>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageButton
+                android:layout_width="@dimen/fragment_login_bottom_image_button_layout_width"
+                android:layout_height="@dimen/fragment_login_bottom_image_button_layout_height"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/fragment_login_bottom_image_button_layout_marginRight"
+                android:background="@drawable/button_shape_bg"
+                android:onClick="doRegistration" />
+            <TextView
+                android:layout_width="@dimen/fragment_login_bottom_image_button_layout_width"
+                android:layout_height="@dimen/fragment_login_bottom_image_button_layout_height"
+                android:text="Отменить запись"
+                android:layout_marginRight="@dimen/fragment_login_bottom_image_button_layout_marginRight"
+                android:textSize="@dimen/fragment_login_bottom_image_button_text_textSize"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:textColor="@color/white"/>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

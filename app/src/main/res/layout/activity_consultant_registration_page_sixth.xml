@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/login_page_tool_bar"
+        android:id="@+id/login_page_tool_bar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/input_form_bg">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textSize="25dp"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:text="Поздравляем коллега! регистрация прошла успешна!"/>
+        <ImageView
+            android:layout_width="@dimen/activity_customer_registration_page_fourth_orange_image_view_layout_width"
+            android:layout_height="@dimen/activity_customer_registration_page_fourth_orange_image_view_layout_height"
+            app:srcCompat="@drawable/orange_female_happy"
+            android:layout_gravity="bottom|right"
+            android:translationX="@dimen/activity_customer_registration_page_fourth_orange_image_view_translationX"
+            android:translationY="@dimen/activity_customer_registration_page_fourth_orange_image_view_translationY"
+            android:rotation="@dimen/activity_customer_registration_page_fourth_orange_image_view_rotation"
+            android:scaleX="-1"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_orange_title_orange_big"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_shape_bg"
+            android:layout_gravity="top|center"
+            android:onClick="toLoginPage"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:text="@string/login_page_title"
+            android:layout_gravity="top|center"
+            android:gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="@dimen/fragment_welcome_bottom_image_button_layout_width"
+                android:layout_height="@dimen/fragment_welcome_bottom_image_button_layout_height"
+                android:onClick="nextWelcomePage"
+                android:background="@drawable/button_shape_bg"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/fragment_welcome_bottom_image_button_layout_marginRight"
+                android:text="@string/next_button"/>
+            <TextView
+                android:layout_width="@dimen/fragment_welcome_bottom_text_view_layout_width"
+                android:layout_height="@dimen/fragment_welcome_bottom_text_view_layout_height"
+                android:text="@string/next_button"
+                android:layout_marginRight="@dimen/fragment_welcome_bottom_text_view_layout_marginRight"
+                android:gravity="center"
+                android:textSize="@dimen/fragment_welcome_bottom_text_view_text_size"
+                android:layout_gravity="right"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/welcome_skip_button"
+                android:onClick="skipWelcomePages"
+                android:layout_width="@dimen/fragment_welcome_bottom_button_layout_width"
+                android:layout_height="@dimen/fragment_welcome_bottom_button_layout_height"
+                android:background="@null"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/fragment_welcome_bottom_button_layout_marginRight"
+                android:textSize="@dimen/fragment_welcome_bottom_button_text_size"
+                android:text="@string/skip_button"
+                android:textColor="@color/black"/>
+
+</FrameLayout>

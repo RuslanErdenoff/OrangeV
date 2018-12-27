@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardBackgroundColor="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Детский педиатр"
+                        android:layout_gravity="left"/>
+                    <Button
+                        android:textStyle="bold"
+                        android:textSize="9dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:background="@drawable/button_shape_bg"
+                        android:textColor="@color/white"
+                        android:text="Редактировать"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="3 000 kzt - Прием у спциалиста"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="5 000 kzt - Вызов специалиста"/>
+                <TextView
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="- УЗИ органов малого таза
+- Влагалищное обследование
+- Кольпоскопия с видеомониторингом
+- Физикальное обследование
+- Мазок на степень чистоты (по показаниям)
+- Онкоцитологическое исследование (по показаниям)
+- Общий анализ крови (по показаниям)
+- Измерение артериального давления
+- Кровь на микрореакцию (по показаниям)
+- Консультация доктора"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardBackgroundColor="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Детский педиатр"
+                        android:layout_gravity="left"/>
+                    <Button
+                        android:textStyle="bold"
+                        android:textSize="9dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:background="@drawable/button_shape_bg"
+                        android:textColor="@color/white"
+                        android:text="Редактировать"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="3 000 kzt - Прием у спциалиста"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="5 000 kzt - Вызов специалиста"/>
+                <TextView
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="- УЗИ органов малого таза
+- Влагалищное обследование
+- Кольпоскопия с видеомониторингом
+- Физикальное обследование
+- Мазок на степень чистоты (по показаниям)
+- Онкоцитологическое исследование (по показаниям)
+- Общий анализ крови (по показаниям)
+- Измерение артериального давления
+- Кровь на микрореакцию (по показаниям)
+- Консультация доктора"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardBackgroundColor="@color/white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:text="Детский педиатр"
+                        android:layout_gravity="left"/>
+                    <Button
+                        android:textStyle="bold"
+                        android:textSize="9dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="100dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right|center"
+                        android:background="@drawable/button_shape_bg"
+                        android:textColor="@color/white"
+                        android:text="Редактировать"/>
+                </FrameLayout>
+                <TextView
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="3 000 kzt - Прием у спциалиста"/>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="5 000 kzt - Вызов специалиста"/>
+                <TextView
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="- УЗИ органов малого таза
+- Влагалищное обследование
+- Кольпоскопия с видеомониторингом
+- Физикальное обследование
+- Мазок на степень чистоты (по показаниям)
+- Онкоцитологическое исследование (по показаниям)
+- Общий анализ крови (по показаниям)
+- Измерение артериального давления
+- Кровь на микрореакцию (по показаниям)
+- Консультация доктора"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

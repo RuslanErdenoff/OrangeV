@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="@dimen/fragment_login_bottom_image_button_layout_width"
+        android:layout_height="@dimen/fragment_login_bottom_image_button_layout_height"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/fragment_login_bottom_image_button_layout_marginRight"
+        android:background="@drawable/button_shape_bg"
+        android:onClick="doRegistration" />
+    <TextView
+        android:layout_width="@dimen/fragment_login_bottom_image_button_layout_width"
+        android:layout_height="@dimen/fragment_login_bottom_image_button_layout_height"
+        android:text="@string/login_page_registration"
+        android:layout_marginRight="@dimen/fragment_login_bottom_image_button_layout_marginRight"
+        android:textSize="@dimen/fragment_login_bottom_image_button_text_textSize"
+        android:gravity="center"
+        android:layout_gravity="right"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/fragment_login_bottom_image_button_layout_height"
+        android:text="@string/login_page_not_registered"
+        android:layout_gravity="left"
+        android:layout_marginLeft="@dimen/fragment_login_bottom_image_button_layout_marginRight"
+        android:textSize="@dimen/fragment_login_bottom_image_button_text_textSize"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+</FrameLayout>
